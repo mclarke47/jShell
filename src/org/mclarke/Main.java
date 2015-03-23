@@ -19,18 +19,18 @@ public class Main {
 
     public static void main(String[] args) throws UnknownHostException {
 
-        SP1 = System.getProperty("user.name")+"@"+ InetAddress.getLocalHost().getHostName()+": ";
+        SP1 = System.getProperty("user.name") + "@" + InetAddress.getLocalHost().getHostName() + ": ";
         pwd = new File(System.getProperty("user.home"));
+
         System.out.print(SP1);
         Scanner sc = new Scanner(System.in);
-        while(sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
 
             lineParse(sc.nextLine().split(" "));
 
-            if(!continueRelp){
+            if (!continueRelp) {
                 break;
-            }
-            else{
+            } else {
                 System.out.print(SP1);
             }
         }
@@ -38,7 +38,7 @@ public class Main {
     }
 
     private static void lineParse(String[] args) {
-        if(args.length>0){
+        if (args.length > 0) {
 
             Command command = commandParser.parse(args);
             command.execute();
@@ -54,7 +54,7 @@ public class Main {
         Main.pwd = pwd;
     }
 
-    public static void exitRelp(int exitCode){
+    public static void exitRelp(int exitCode) {
         Main.exitCode = exitCode;
         continueRelp = false;
     }

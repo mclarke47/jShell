@@ -6,7 +6,7 @@ import java.io.File;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-public class ListDirectory implements Command{
+public class ListDirectory implements Command {
 
     @Override
     public void setParams(String[] params) {
@@ -16,10 +16,9 @@ public class ListDirectory implements Command{
     @Override
     public void execute() {
         Function<File, String> getName = (f) -> {
-            if(f.isDirectory()){
-                return f.getName()+"/";
-            }
-            else{
+            if (f.isDirectory()) {
+                return f.getName() + "/";
+            } else {
                 return f.getName();
             }
         };

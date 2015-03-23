@@ -5,7 +5,8 @@ import org.mclarke.Main;
 public class Exit implements Command {
 
     private int exitCode = 0;
-    public Exit(int exitCode){
+
+    public Exit(int exitCode) {
         this.exitCode = exitCode;
     }
 
