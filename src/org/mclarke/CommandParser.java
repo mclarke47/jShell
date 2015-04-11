@@ -1,6 +1,7 @@
 package org.mclarke;
 
 import org.mclarke.command.*;
+import org.mclarke.command.ls.ListDirectory;
 
 import java.util.Arrays;
 import java.util.HashMap;
