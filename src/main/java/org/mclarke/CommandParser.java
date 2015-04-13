@@ -1,6 +1,9 @@
 package org.mclarke;
 
-import org.mclarke.command.*;
+import org.mclarke.command.ChangeDirectory;
+import org.mclarke.command.Command;
+import org.mclarke.command.Exit;
+import org.mclarke.command.NewLine;
 import org.mclarke.command.ls.ListDirectory;
 
 import java.util.Arrays;

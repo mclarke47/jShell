@@ -16,15 +16,8 @@ public class FileListing {
         return file;
     }
 
-    public void setFile(File file) {
-        this.file = file;
-    }
-
     public String getFileName() {
         return fileName;
     }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
 }

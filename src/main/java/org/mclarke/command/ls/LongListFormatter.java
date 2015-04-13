@@ -41,7 +41,7 @@ public class LongListFormatter {
         public String getPermissions(){
 
             String user = formatPermissionLine(fileListing.getFile().canRead(), fileListing.getFile().canWrite(), fileListing.getFile().canExecute());
-            String group = user;
+            String group = user; //TODO implement group permission read
             String other = "---";
 
             return String.format("%s%s%s%s", fileListing.getFile().isDirectory() ? "d" : "-", user, group, other );
